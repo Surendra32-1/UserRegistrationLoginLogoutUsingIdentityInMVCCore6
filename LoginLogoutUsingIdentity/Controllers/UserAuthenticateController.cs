@@ -32,9 +32,10 @@ namespace LoginLogoutUsingIdentity.Controllers
             TempData["message"] = res.Result.Message;
             return RedirectToAction(nameof(Login));
         }
-        public async Task Logout()
+        public async Task<IActionResult> Logout()
         {
             await _accountService.LogoutAsync();
+            return RedirectToAction(nameof(Login));
              
         }
         public async Task<IActionResult> Registration()
