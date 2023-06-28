@@ -1,4 +1,5 @@
 ﻿using LoginLogoutUsingIdentity.Models;
+using LoginLogoutUsingIdentity.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

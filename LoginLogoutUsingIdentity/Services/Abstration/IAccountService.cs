@@ -6,9 +6,9 @@ namespace LoginLogoutUsingIdentity.Services.Abstration
 {
     public interface IAccountService
     {
-        Task<Status> LoginAsync(LoginVM loginVM);
-        Task<Status> RegistrationAsync(RegistrationVM registerVM);
-        Task<Status> LogoutAsync();
+        Task<Result> LoginAsync(LoginVM loginVM);
+        Task<Result> RegistrationAsync(RegistrationVM registerVM);
+        Task LogoutAsync();
 
 
     }
